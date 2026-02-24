@@ -1855,33 +1855,56 @@ ul {
 @media (max-width: 768px) {
     .why-compare__row {
         grid-template-columns: 1fr;
-        gap: 1rem;
-        padding: 2rem;
+        gap: 0;
+        padding: 0;
+        background: transparent;
+        border-radius: 12px;
+        overflow: hidden;
     }
 
     .why-compare__row--header {
         display: none;
     }
 
-    .why-compare__col::before {
-        display: block;
-        font-size: 0.8rem;
-        color: rgba(255, 255, 255, 0.4);
-        margin-bottom: 0.25rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+    .why-compare__col--feature {
+        background: rgba(255, 255, 255, 0.08);
+        padding: 1rem 1.25rem;
+        font-size: 1rem;
+        border-radius: 12px 12px 0 0;
     }
 
-    .why-compare__col--feature::before {
-        content: "Özellik";
+    .why-compare__col--standard {
+        background: rgba(255, 100, 100, 0.08);
+        padding: 0.875rem 1.25rem;
+        font-size: 0.9rem;
+        border-left: 3px solid rgba(255, 100, 100, 0.4);
     }
 
     .why-compare__col--standard::before {
-        content: "Geleneksel";
+        content: "✕ ";
+        color: rgba(255, 100, 100, 0.7);
+    }
+
+    .why-compare__col--ob {
+        background: rgba(96, 179, 130, 0.1);
+        padding: 0.875rem 1.25rem;
+        font-size: 0.9rem;
+        border-left: 3px solid var(--green-brand);
+        border-radius: 0 0 12px 12px;
+    }
+
+    .why-compare__col--ob svg {
+        display: none;
     }
 
     .why-compare__col--ob::before {
-        content: "OceansBound";
+        content: "✓ ";
+        color: var(--green-brand);
+        font-weight: 700;
+    }
+
+    .why-compare__table {
+        gap: 1.5rem;
     }
 }
 
