@@ -1285,6 +1285,20 @@ ul {
     justify-content: center;
 }
 
+.about-story__image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 22, 40, 0.4);
+    pointer-events: none;
+}
+
+.about-story__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* Philosophy Section */
 .about-philosophy {
     padding: 6rem 5%;
