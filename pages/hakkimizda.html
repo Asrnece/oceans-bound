@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="OceansBound — Hakkımızda. Denizcilik operasyonlarında güvenilir ortağınız. Siz denize odaklanın, gerisini biz halledelim.">
+    <title>Hakkımızda — OceansBound</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="../public/oceansbound-logo.png">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <!-- Ocean Depth Atmosphere Layers -->
+    <div class="ocean-rays" id="oceanRays" aria-hidden="true"></div>
+    <div id="particlesContainer" aria-hidden="true"></div>
+
+    <!-- ========== NAVBAR ========== -->
+    <header class="navbar" id="navbar" role="banner">
+        <div class="navbar__container">
+            <a href="../index.html" class="navbar__logo" aria-label="OceansBound Anasayfa">
+                <img src="../public/oceansbound-logo.png" alt="OceansBound Logo" class="navbar__logo-icon">
+                <img src="../public/oceansbound-yazi.png" alt="OceansBound" class="navbar__logo-text-img">
+            </a>
+
+            <nav class="navbar__nav" id="navMenu" role="navigation" aria-label="Ana menü">
+                <ul class="navbar__list">
+                    <li><a href="../index.html" class="navbar__link">Anasayfa</a></li>
+                    <li><a href="hakkimizda.html" class="navbar__link navbar__link--active">Hakkımızda</a></li>
+                    <li><a href="hizmetler.html" class="navbar__link">Hizmetler</a></li>
+                    <li><a href="neden-biz.html" class="navbar__link">Neden Biz?</a></li>
+                    <li><a href="iletisim.html" class="navbar__link">İletişim</a></li>
+                </ul>
+            </nav>
+
+            <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Menüyü aç" aria-expanded="false"
+                aria-controls="navMenu">
+                <span class="navbar__hamburger-line"></span>
+                <span class="navbar__hamburger-line"></span>
+                <span class="navbar__hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="about-page-main">
+
+        <!-- HEADER SECTION -->
+        <section class="about-header">
+            <div class="about-header__container">
+                <h1 class="hero__headline about-header__title">
+                    Geleceğin Denizcilik<br><span class="hero__headline-accent">Operasyonları</span>
+                </h1>
+                <p class="about-summary__desc about-header__desc">
+                    Denizcilik sektöründeki derin tecrübemiz ve uzman kadromuzla, operasyonlarınızı sorunsuz ve verimli
+                    bir şekilde yönetiyoruz.
+                </p>
+            </div>
+        </section>
+
+        <!-- STORY SECTION -->
+        <section class="about-story">
+            <div class="about-story__grid">
+
+                <div class="about-story__text">
+                    <h2 class="about-summary__title about-story__title">Denizde Doğan<br>Bir Tutku</h2>
+                    <p class="about-summary__desc about-story__desc">
+                        OceansBound, denizcilik operasyonlarının karmaşıklığını ve kaptanların omuzlarındaki idari yükü
+                        hafifletmek amacıyla kuruldu. Yıllarca süren denizcilik ve liman yönetimi tecrübemiz, bize bir
+                        gerçeği gösterdi: Denizin gerçek ruhunu yaşamak için, karadaki detayların kusursuz bir şekilde
+                        yönetilmesi gerekir.
+                    </p>
+                    <p class="about-summary__desc">
+                        Amacımız, uluslararası denizcilik standartlarına uygun, şeffaf ve güvenilir bir acentelik
+                        hizmeti sunmak. Müşterilerimizin ihtiyaçlarına özel çözümler üreterek, seyir keyfini maksimuma
+                        çıkarıyoruz.
+                    </p>
+                </div>
+
+                <div class="about-story__image">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                    </svg>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PHILOSOPHY SECTION -->
+        <section class="about-philosophy">
+            <div class="about-philosophy__container">
+                <span class="why-us__label about-philosophy__label">Felsefemiz</span>
+                <h2 class="why-us__title about-philosophy__title">Siz Denize Odaklanın,<br>Geri Kalanını Bize
+                    Bırakın</h2>
+                <p class="intro__text about-philosophy__text">
+                    Yat sahipleri ve kaptanları için en değerli şey zamandır. Biz, o değerli zamanın liman
+                    prosedürleriyle, idari süreçlerle değil — açık denizde, güneşin altında geçirilmesi gerektiğine
+                    inanıyoruz.
+                </p>
+                <p class="intro__text about-philosophy__text--last">
+                    Siz rotanızı belirleyin, biz arkanızdaki rüzgar, limandaki güvenli iskeleniz olalım. Tüm resmi
+                    işlemlerden lojistik desteklere kadar her detayı üstlenerek, size sadece ufuk çizgisine odaklanma
+                    özgürlüğünü sunuyoruz.
+                </p>
+            </div>
+        </section>
+
+        <!-- VALUES SECTION -->
+        <section class="about-values">
+            <div class="about-values__header">
+                <span class="services-summary__label about-values__label">Değerlerimiz</span>
+                <h2 class="services-summary__title">Bizi Biz Yapan İlkeler</h2>
+            </div>
+
+            <div class="services-summary__grid about-values__grid">
+                <div class="services-summary__card">
+                    <div class="about-values__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h3 class="services-summary__card-title">Güven & Şeffaflık</h3>
+                    <p class="services-summary__card-desc">Tüm süreçlerde şeffaflık ve dürüstlük temel ilkemizdir.
+                        Müşterilerimizle uzun soluklu, güvene dayalı ilişkiler kurarız.</p>
+                </div>
+                <div class="services-summary__card">
+                    <div class="about-values__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                    </div>
+                    <h3 class="services-summary__card-title">Zaman Yönetimi</h3>
+                    <p class="services-summary__card-desc">Denizcilikte zaman en kritik faktördür. İşlemleri en kısa
+                        sürede, kusursuz bir şekilde tamamlamak için var gücümüzle çalışırız.</p>
+                </div>
+                <div class="services-summary__card">
+                    <div class="about-values__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                            <line x1="12" y1="22.08" x2="12" y2="12" />
+                        </svg>
+                    </div>
+                    <h3 class="services-summary__card-title">Mükemmeliyetiyetçilik</h3>
+                    <p class="services-summary__card-desc">Sıradanla yetinmeyiz. En iyi hizmet kalitesini sunmak için
+                        sürekli gelişime, detaylara ve yeniliğe odaklanırız.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== INTRO / CTA SECTION ========== -->
+        <section class="intro" id="intro" aria-label="Tanıtım">
+            <div class="intro__container">
+                <div class="why-us__header">
+                    <h2 class="why-us__title">Rotanızı Birlikte Çizelim</h2>
+                </div>
+                <p class="intro__text">
+                    Denizcilik operasyonlarınızda profesyonel destek almak ve zamanınızı denizin keyfini çıkarmaya
+                    ayırmak için bizimle iletişime geçin.
+                </p>
+
+                <a href="../pages/iletisim.html" class="intro__cta" role="button">
+                    İletişime Geçelim
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="../index.html" class="footer__logo" aria-label="OceansBound Anasayfa">
+                        <img src="../public/footer-logo.png" alt="OceansBound Logo" class="footer__logo-icon">
+                    </a>
+                    <p class="footer__desc">
+                        Denizcilik sektöründeki derin tecrübemizle,<br>
+                        operasyonlarınızı sorunsuz yönetiyoruz.
+                    </p>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__heading">Hızlı Erişim</h4>
+                    <ul class="footer__list">
+                        <li><a href="../index.html">Anasayfa</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="hizmetler.html">Hizmetler</a></li>
+                        <li><a href="neden-biz.html">Neden Biz?</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h4 class="footer__heading">İletişim</h4>
+                    <ul class="footer__list">
+                        <li><a href="mailto:info@oceansbound.com">info@oceansbound.com</a></li>
+                        <li><a href="tel:+905551234567">+90 555 123 45 67</a></li>
+                        <li>Denizciler Cad. No:1, İstanbul</li>
+                    </ul>
+
+                    <div class="footer__social">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">Copyright&copy;2026. Tüm Hakları Saklıdır.</p>
+                <div class="footer__developer">
+                    <img src="../public/moniİcon.ico" alt="Moni Yazılım" class="footer__developer-icon">
+                    <span class="footer__copy">Moni Yazılım</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js" defer></script>
+</body>
+
+</html>

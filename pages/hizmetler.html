@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="OceansBound Hizmetleri. Profesyonel acentelik, doküman takibi, ekipman yönetimi, personel takibi ve lojistik koordinasyon.">
+    <title>Hizmetler — OceansBound</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="../public/oceansbound-logo.png">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <!-- Ocean Depth Atmosphere Layers -->
+    <div class="ocean-rays" id="oceanRays" aria-hidden="true"></div>
+    <div id="particlesContainer" aria-hidden="true"></div>
+
+    <!-- ========== NAVBAR ========== -->
+    <header class="navbar" id="navbar" role="banner">
+        <div class="navbar__container">
+            <a href="../index.html" class="navbar__logo" aria-label="OceansBound Anasayfa">
+                <img src="../public/oceansbound-logo.png" alt="OceansBound Logo" class="navbar__logo-icon">
+                <img src="../public/oceansbound-yazi.png" alt="OceansBound" class="navbar__logo-text-img">
+            </a>
+
+            <nav class="navbar__nav" id="navMenu" role="navigation" aria-label="Ana menü">
+                <ul class="navbar__list">
+                    <li><a href="../index.html" class="navbar__link">Anasayfa</a></li>
+                    <li><a href="hakkimizda.html" class="navbar__link">Hakkımızda</a></li>
+                    <li><a href="hizmetler.html" class="navbar__link navbar__link--active">Hizmetler</a></li>
+                    <li><a href="neden-biz.html" class="navbar__link">Neden Biz?</a></li>
+                    <li><a href="iletisim.html" class="navbar__link">İletişim</a></li>
+                </ul>
+            </nav>
+
+            <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Menüyü aç" aria-expanded="false"
+                aria-controls="navMenu">
+                <span class="navbar__hamburger-line"></span>
+                <span class="navbar__hamburger-line"></span>
+                <span class="navbar__hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="services-page-main">
+
+        <!-- HEADER SECTION -->
+        <section class="services-header">
+            <div class="services-header__container">
+                <h1 class="hero__headline services-header__title">
+                    Operasyonel<br><span class="hero__headline-accent">Çözümlerimiz</span>
+                </h1>
+                <p class="services-header__desc">
+                    Yatınızın kusursuz bir operasyon geçirmesi için tüm sorumluluğu üstleniyoruz. Siz sadece rotanızı
+                    belirleyin, gerisini uzman ekibimize bırakın.
+                </p>
+            </div>
+        </section>
+
+        <!-- SERVICES GRID -->
+        <section class="services-list">
+            <div class="services-list__grid">
+
+                <!-- Service 1 -->
+                <div class="services-list__card">
+                    <span class="services-list__number">01</span>
+                    <h3 class="services-list__title">Profesyonel<br>Acentelik</h3>
+                    <p class="services-list__desc">
+                        Liman işlemlerinizin başından sonuna kadar titizlikle yönetimi. Tüm resmi prosedürler, izinler,
+                        liman evrakları ve yerel otoriteler arası koordinasyon tamamen bizim kontrolümüzde.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="services-list__card">
+                    <span class="services-list__number">02</span>
+                    <h3 class="services-list__title">Doküman<br>Takibi</h3>
+                    <p class="services-list__desc">
+                        Teknenize ait kritik belgelerin güncel tutulması, yenilenmesi ve gerektiğinde ilgili makamlara
+                        iletilmesi. Gecikmelere ve cezai işlemlere asla mahal vermeyen kusursuz takip sistemi.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="services-list__card">
+                    <span class="services-list__number">03</span>
+                    <h3 class="services-list__title">Ekipman<br>Yönetimi</h3>
+                    <p class="services-list__desc">
+                        Kritik ekipmanlarınızın bakım takvimi, tedarik süreci ve yedek parça lojistiği eksiksiz şekilde
+                        takip edilir. Her seferinde seyre hazır ve güvende hissetmeniz sağlanır.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="services-list__card">
+                    <span class="services-list__number">04</span>
+                    <h3 class="services-list__title">Personel<br>Takibi</h3>
+                    <p class="services-list__desc">
+                        Mürettebatınızın sertifika ve belgelerinin takibi, vize gereksinimleri, havaalanından tekneye
+                        transfer organizasyonları ve tüm detaylı idari süreçler sorunsuz halledilir.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="services-list__card">
+                    <span class="services-list__number">05</span>
+                    <h3 class="services-list__title">Lojistik<br>Koordinasyon</h3>
+                    <p class="services-list__desc">
+                        Teknenize yapılacak teslimatlarda, kumanya ikmalinde, kritik parça transferlerinde ve operasyon
+                        gerektiren diğer noktalarda uçtan uca uzman lojistik yönetimi.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="services-list__card">
+                    <span class="services-list__number">06</span>
+                    <h3 class="services-list__title">7/24 Kesintisiz<br>Teknik Destek</h3>
+                    <p class="services-list__desc">
+                        Seyriniz sırasında yaşanabilecek her türlü teknik arızada veya acil durumda, günün her saati
+                        müdahale edebilecek özel iletişim hattı ve anında kriz çözümü.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROCESS SECTION -->
+        <section class="process">
+            <div class="process__container">
+                <span class="why-us__label">Nasıl Çalışırız?</span>
+                <h2 class="why-us__title">Kusursuz İşleyiş, Sıfır Gecikme</h2>
+
+                <div class="process__steps">
+                    <div class="process__step">
+                        <div class="process__icon">1</div>
+                        <h3 class="process__title">Talep & Analiz</h3>
+                        <p class="process__desc">İhtiyaçlarınızı dinler, eksikleri ve yapılması gereken idari işlemleri
+                            tespit ederiz.</p>
+                    </div>
+                    <div class="process__step">
+                        <div class="process__icon">2</div>
+                        <h3 class="process__title">Planlama</h3>
+                        <p class="process__desc">Zaman çizergesini oluşturup, liman ve resmi dairelerdeki randevuları
+                            organize ederiz.</p>
+                    </div>
+                    <div class="process__step">
+                        <div class="process__icon">3</div>
+                        <h3 class="process__title">Yürütme</h3>
+                        <p class="process__desc">Uzman ekibimiz sahaya iner. İkmal, dokümantasyon ve personel lojistiği
+                            tamamlanır.</p>
+                    </div>
+                    <div class="process__step">
+                        <div class="process__icon">4</div>
+                        <h3 class="process__title">Kesintisiz Seyir</h3>
+                        <p class="process__desc">Her şey hazır olduğunda raporumuzu sunarız. Size sadece demir almak
+                            kalır.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="faq">
+            <div class="faq__header">
+                <span class="why-us__label">S.S.S</span>
+                <h2 class="why-us__title">Sıkça Sorulan Sorular</h2>
+            </div>
+            <div class="faq__list">
+                <div class="faq__item">
+                    <h3 class="faq__question">Acentelik hizmetiniz hangi bölgeleri kapsıyor?</h3>
+                    <p class="faq__answer">Operasyonlarımız global düzeyde uzman bir ağ tarafından desteklenmektedir.
+                        Özellikle popüler yat rotaları, Akdeniz ve Ege dilleri başta olmak üzere dünyanın her noktasında
+                        destek sunabiliyoruz.</p>
+                </div>
+                <div class="faq__item">
+                    <h3 class="faq__question">Doküman yenileme işlemlerini sadece limandayken mi yapıyorsunuz?</h3>
+                    <p class="faq__answer">Hayır, dokümanlarınız bulut altyapımızda takip edilir. Süresi dolmaya
+                        yaklaşan belgeler için önceden aksiyon alır ve tekneniz denizdeyken bile bürokratik süreci sizin
+                        adınıza yürütürüz.</p>
+                </div>
+                <div class="faq__item">
+                    <h3 class="faq__question">Acil yedek parça ihtiyacında lojistik desteğiniz var mı?</h3>
+                    <p class="faq__answer">Kesinlikle. Geniş lojistik ağımız ve hızlı teslimat partnerlerimiz sayesinde,
+                        arızalanan parçanın yerine yenisinin dünyanın neresinden olursa olsun temin edilip teknenize
+                        ulaştırılmasını sağlıyoruz.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="intro" id="intro" aria-label="Tanıtım">
+            <div class="intro__container">
+                <div class="why-us__header">
+                    <h2 class="why-us__title">Tüm Operasyonu Bize Bırakın</h2>
+                </div>
+                <p class="intro__text">
+                    Detaylı hizmet paketlerimiz ve teknenize özel sunduğumuz yönetim planları için hemen iletişime
+                    geçin.
+                </p>
+
+                <a href="../pages/iletisim.html" class="intro__cta" role="button">
+                    İletişime Geçelim
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="../index.html" class="footer__logo" aria-label="OceansBound Anasayfa">
+                        <img src="../public/footer-logo.png" alt="OceansBound Logo" class="footer__logo-icon">
+                    </a>
+                    <p class="footer__desc">
+                        Denizcilik sektöründeki derin tecrübemizle,<br>
+                        operasyonlarınızı sorunsuz yönetiyoruz.
+                    </p>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__heading">Hızlı Erişim</h4>
+                    <ul class="footer__list">
+                        <li><a href="../index.html">Anasayfa</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="hizmetler.html">Hizmetler</a></li>
+                        <li><a href="neden-biz.html">Neden Biz?</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h4 class="footer__heading">İletişim</h4>
+                    <ul class="footer__list">
+                        <li><a href="mailto:info@oceansbound.com">info@oceansbound.com</a></li>
+                        <li><a href="tel:+905551234567">+90 555 123 45 67</a></li>
+                        <li>Denizciler Cad. No:1, İstanbul</li>
+                    </ul>
+
+                    <div class="footer__social">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">Copyright&copy;2026. Tüm Hakları Saklıdır.</p>
+                <div class="footer__developer">
+                    <img src="../public/moniİcon.ico" alt="Moni Yazılım" class="footer__developer-icon">
+                    <span class="footer__copy">Moni Yazılım</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js" defer></script>
+</body>
+
+</html>

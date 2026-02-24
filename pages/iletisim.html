@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="OceansBound ile iletişime geçin. Dünyanın her yerinde uçtan uca, 7/24 premium acentelik ve lojistik desteği alın.">
+    <title>İletişim — OceansBound</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="../public/oceansbound-logo.png">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <!-- Ocean Depth Atmosphere Layers -->
+    <div class="ocean-rays" id="oceanRays" aria-hidden="true"></div>
+    <div id="particlesContainer" aria-hidden="true"></div>
+
+    <!-- ========== NAVBAR ========== -->
+    <header class="navbar" id="navbar" role="banner">
+        <div class="navbar__container">
+            <a href="../index.html" class="navbar__logo" aria-label="OceansBound Anasayfa">
+                <img src="../public/oceansbound-logo.png" alt="OceansBound Logo" class="navbar__logo-icon">
+                <img src="../public/oceansbound-yazi.png" alt="OceansBound" class="navbar__logo-text-img">
+            </a>
+
+            <nav class="navbar__nav" id="navMenu" role="navigation" aria-label="Ana menü">
+                <ul class="navbar__list">
+                    <li><a href="../index.html" class="navbar__link">Anasayfa</a></li>
+                    <li><a href="hakkimizda.html" class="navbar__link">Hakkımızda</a></li>
+                    <li><a href="hizmetler.html" class="navbar__link">Hizmetler</a></li>
+                    <li><a href="neden-biz.html" class="navbar__link">Neden Biz?</a></li>
+                    <li><a href="iletisim.html" class="navbar__link navbar__link--active">İletişim</a></li>
+                </ul>
+            </nav>
+
+            <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Menüyü aç" aria-expanded="false"
+                aria-controls="navMenu">
+                <span class="navbar__hamburger-line"></span>
+                <span class="navbar__hamburger-line"></span>
+                <span class="navbar__hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="contact-page-main">
+
+        <!-- HEADER SECTION -->
+        <section class="services-header mt-8">
+            <div class="services-header__container">
+                <h1 class="hero__headline services-header__title">
+                    Rotanızı Bize<br><span class="hero__headline-accent">Bildirin</span>
+                </h1>
+                <p class="services-header__desc">
+                    Tüm operasyonel detayları OceansBound uzmanlığına devredin. İster genel bir bilgi talebi, ister acil
+                    destek için bizimle anında iletişime geçebilirsiniz.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTACT CARDS GRID -->
+        <section class="contact-cards">
+            <div class="contact-cards__grid">
+
+                <!-- Card 1: Emergency -->
+                <div class="contact-card">
+                    <div class="contact-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            <path d="M14.05 2a9 9 0 0 1 8 7.94" />
+                            <path d="M14.05 6A5 5 0 0 1 18 10" />
+                        </svg>
+                    </div>
+                    <h3 class="contact-card__title">7/24 Acil Hat</h3>
+                    <p class="services-list__desc" style="margin-bottom:0.5rem;">Kriz anında direkt ulaşın</p>
+                    <a href="tel:+905551234567" class="contact-card__value">+90 555 123 45 67</a>
+                </div>
+
+                <!-- Card 2: Email -->
+                <div class="contact-card">
+                    <div class="contact-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                    </div>
+                    <h3 class="contact-card__title">E-Posta</h3>
+                    <p class="services-list__desc" style="margin-bottom:0.5rem;">Dokümanlar ve Planlama</p>
+                    <a href="mailto:info@oceansbound.com" class="contact-card__value">info@oceansbound.com</a>
+                </div>
+
+                <!-- Card 3: Location -->
+                <div class="contact-card">
+                    <div class="contact-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                    </div>
+                    <h3 class="contact-card__title">Merkez Ofis</h3>
+                    <p class="services-list__desc" style="margin-bottom:0.5rem;">Operasyon Merkezi</p>
+                    <span class="contact-card__value" style="cursor:default;">Denizciler Cad. No:1, İstanbul</span>
+                </div>
+
+                <!-- Card 4: Global -->
+                <div class="contact-card">
+                    <div class="contact-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="2" y1="12" x2="22" y2="12" />
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                    </div>
+                    <h3 class="contact-card__title">Global Ağ</h3>
+                    <p class="services-list__desc" style="margin-bottom:0.5rem;">Tüm Limanlar</p>
+                    <span class="contact-card__value" style="cursor:default;">Dünya Çapında Hizmet</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPLIT FORM SECTION -->
+        <section class="contact-split">
+
+            <!-- Form Area -->
+            <div class="contact-form__wrapper">
+                <h2 class="contact-form__title">Mesaj Gönderin</h2>
+                <p class="contact-form__desc">Size en kısa sürede geri dönüş yapmak için iletişim bilgilerinizi bizimle
+                    paylaşın.</p>
+
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Adınız Soyadınız / Tekne Adı</label>
+                        <input type="text" id="name" name="name" placeholder="Örn: Kaptan Ahmet Yılmaz / S/Y Poseidon"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-Posta Adresi</label>
+                        <input type="email" id="email" name="email" placeholder="ornek@posta.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mesajınız / Talebiniz</label>
+                        <textarea id="message" name="message" placeholder="Acentelik, Lojistik, Doküman Yenileme..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit">Gönder ve Rotayı Başlat</button>
+                </form>
+            </div>
+
+            <!-- Global Graphic Statement -->
+            <div class="contact-global">
+                <div class="contact-global__bg"></div>
+                <h3 class="contact-global__title">Siz Demir Alın,<br>Gerisi Bizde.</h3>
+                <p class="contact-global__text">
+                    Operasyonların lokasyonu neresi olursa olsun profesyonel ekibimiz her kıtada, her limanda
+                    standartlara uygun ve eksiksiz bir şekilde yanınızdadır.
+                    <br><br>
+                    <strong>OceansBound, kıtaları aşan operasyon güvenliğinizdir.</strong>
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="../index.html" class="footer__logo" aria-label="OceansBound Anasayfa">
+                        <img src="../public/footer-logo.png" alt="OceansBound Logo" class="footer__logo-icon">
+                    </a>
+                    <p class="footer__desc">
+                        Denizcilik sektöründeki derin tecrübemizle,<br>
+                        operasyonlarınızı sorunsuz yönetiyoruz.
+                    </p>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__heading">Hızlı Erişim</h4>
+                    <ul class="footer__list">
+                        <li><a href="../index.html">Anasayfa</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="hizmetler.html">Hizmetler</a></li>
+                        <li><a href="neden-biz.html">Neden Biz?</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h4 class="footer__heading">İletişim</h4>
+                    <ul class="footer__list">
+                        <li><a href="mailto:info@oceansbound.com">info@oceansbound.com</a></li>
+                        <li><a href="tel:+905551234567">+90 555 123 45 67</a></li>
+                        <li>Denizciler Cad. No:1, İstanbul</li>
+                    </ul>
+
+                    <div class="footer__social">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">Copyright&copy;2026. Tüm Hakları Saklıdır.</p>
+                <div class="footer__developer">
+                    <img src="../public/moniİcon.ico" alt="Moni Yazılım" class="footer__developer-icon">
+                    <span class="footer__copy">Moni Yazılım</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js" defer></script>
+</body>
+
+</html>

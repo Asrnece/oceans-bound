@@ -40,11 +40,11 @@
                     oceanRays.style.opacity = raysOpacity;
                 }
 
-                // 2. Enable particles (visible 60% - 100% scroll)
+                // 2. Enable particles (visible earlier on scroll)
                 if (particlesContainer) {
-                    if (scrollProgress > 0.5 && particlesContainer.children.length === 0) {
+                    if (scrollProgress > 0.1 && particlesContainer.children.length === 0) {
                         createParticles(15);
-                    } else if (scrollProgress <= 0.5 && particlesContainer.children.length > 0) {
+                    } else if (scrollProgress <= 0.1 && particlesContainer.children.length > 0) {
                         particlesContainer.innerHTML = ''; // Remove when near surface
                     }
                 }
@@ -135,7 +135,8 @@
             const left = Math.random() * 100;
             const size = Math.random() * 3 + 2; // 2px - 5px
             const duration = Math.random() * 20 + 10; // 10s - 30s
-            const delay = Math.random() * 10; // 0s - 10s
+            // Create much shorter delay so particles appear quickly
+            const delay = Math.random() * 2; // 0s - 2s
             const drift = (Math.random() - 0.5) * 100; // -50px to 50px
             const opacity = Math.random() * 0.4 + 0.1; // 0.1 - 0.5
 
