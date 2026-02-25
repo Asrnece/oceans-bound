@@ -30,13 +30,20 @@
 
             <nav class="navbar__nav" id="navMenu" role="navigation" aria-label="Ana menü">
                 <ul class="navbar__list">
-                    <li><a href="../index.html" class="navbar__link">Anasayfa</a></li>
-                    <li><a href="hakkimizda.html" class="navbar__link">Hakkımızda</a></li>
-                    <li><a href="hizmetler.html" class="navbar__link">Hizmetler</a></li>
-                    <li><a href="neden-biz.html" class="navbar__link navbar__link--active">Neden Biz?</a></li>
-                    <li><a href="iletisim.html" class="navbar__link">İletişim</a></li>
+                    <li><a href="../index.html" class="navbar__link" data-i18n="nav.home">Anasayfa</a></li>
+                    <li><a href="hakkimizda.html" class="navbar__link" data-i18n="nav.about">Hakkımızda</a></li>
+                    <li><a href="hizmetler.html" class="navbar__link" data-i18n="nav.services">Hizmetler</a></li>
+                    <li><a href="neden-biz.html" class="navbar__link navbar__link--active" data-i18n="nav.whyus">Neden Biz?</a></li>
+                    <li><a href="iletisim.html" class="navbar__link" data-i18n="nav.contact">İletişim</a></li>
                 </ul>
             </nav>
+
+            <!-- Language Toggle -->
+            <button class="navbar__lang-toggle" id="langToggle" aria-label="Dil değiştir">
+                <span class="navbar__lang-option navbar__lang-option--active" data-lang="tr">TR</span>
+                <span class="navbar__lang-separator">|</span>
+                <span class="navbar__lang-option" data-lang="en">EN</span>
+            </button>
 
             <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Menüyü aç" aria-expanded="false"
                 aria-controls="navMenu">
@@ -53,10 +60,10 @@
         <!-- HEADER SECTION -->
         <section class="services-header">
             <div class="services-header__container">
-                <h1 class="hero__headline services-header__title">
-                    Sınırları Aşan<br><span class="hero__headline-accent">Hizmet Anlayışı</span>
+                <h1 class="hero__headline services-header__title" data-i18n-html="why.page.header">
+                    Sınırları Aşan<br><span class="hero__headline-accent" data-i18n="why.page.headerAccent">Hizmet Anlayışı</span>
                 </h1>
-                <p class="services-header__desc">
+                <p class="services-header__desc" data-i18n="why.page.intro">
                     Denizcilik sektöründeki karmaşıklığı ortadan kaldırıyor, operasyonlarınızı pürüzsüz ve şeffaf bir
                     deneyime dönüştürüyoruz.
                 </p>
@@ -71,8 +78,8 @@
                     <!-- Card 1: Wide Top -->
                     <div class="why-bento__card why-bento__card--wide">
                         <div class="why-bento__content">
-                            <h3 class="why-bento__title">01. Konum Bağımsız Hizmet</h3>
-                            <p class="why-bento__desc">
+                            <h3 class="why-bento__title" data-i18n="why.b1.title">01. Konum Bağımsız Hizmet</h3>
+                            <p class="why-bento__desc" data-i18n="why.b1.desc">
                                 Dünyanın neresinde olursanız olun, aynı kalite ve hızda destek alırsınız. Çok uluslu
                                 liman prosedürlerini uzaktan koordine etme konusundaki benzersiz deneyimimiz, rotanız
                                 neresi olursa olsun bizi yanınızda kılar.
@@ -91,8 +98,8 @@
 
                     <!-- Card 2: Square -->
                     <div class="why-bento__card why-bento__card--square">
-                        <h3 class="why-bento__title">02. Çözüm Odaklı</h3>
-                        <p class="why-bento__desc">Sorunları büyümeden çözeriz. Uzman ekibimiz beklenmedik durumlarda
+                        <h3 class="why-bento__title" data-i18n="why.b2.title">02. Çözüm Odaklı</h3>
+                        <p class="why-bento__desc" data-i18n="why.b2.desc">Sorunları büyümeden çözeriz. Uzman ekibimiz beklenmedik durumlarda
                             sakin ve etkili aksiyon alır.</p>
                         <div class="why-bento__icon-small">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -103,8 +110,8 @@
 
                     <!-- Card 3: Square -->
                     <div class="why-bento__card why-bento__card--square">
-                        <h3 class="why-bento__title">03. Titiz Takip</h3>
-                        <p class="why-bento__desc">Hiçbir belge, ekipman veya son tarih gözden kaçmaz. Sistematik
+                        <h3 class="why-bento__title" data-i18n="why.b3.title">03. Titiz Takip</h3>
+                        <p class="why-bento__desc" data-i18n="why.b3.desc">Hiçbir belge, ekipman veya son tarih gözden kaçmaz. Sistematik
                             altyapımız sizi bir adım önde tutar.</p>
                         <div class="why-bento__icon-small">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -116,8 +123,8 @@
 
                     <!-- Card 4: Square -->
                     <div class="why-bento__card why-bento__card--square">
-                        <h3 class="why-bento__title">04. Şeffaf İletişim</h3>
-                        <p class="why-bento__desc">Her adımda bilgilendirilirsiniz. Ne yaptığımızı, neden yaptığımızı ve
+                        <h3 class="why-bento__title" data-i18n="why.b4.title">04. Şeffaf İletişim</h3>
+                        <p class="why-bento__desc" data-i18n="why.b4.desc">Her adımda bilgilendirilirsiniz. Ne yaptığımızı, neden yaptığımızı ve
                             ne zaman tamamlanacağını bilirsiniz.</p>
                         <div class="why-bento__icon-small">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -129,8 +136,8 @@
                     <!-- Card 5: Wide Bottom -->
                     <div class="why-bento__card why-bento__card--wide">
                         <div class="why-bento__content">
-                            <h3 class="why-bento__title">05. Seyrin Her Aşamasında Kesintisiz Destek</h3>
-                            <p class="why-bento__desc">
+                            <h3 class="why-bento__title" data-i18n="why.b5.title">05. Seyrin Her Aşamasında Kesintisiz Destek</h3>
+                            <p class="why-bento__desc" data-i18n="why.b5.desc">
                                 Sadece liman giriş-çıkışlarında değil; seyir öncesi detaylı hazırlıktan, deniz üstündeki
                                 acil koordinasyona ve varış sonrası kapanış işlemlerine kadar rotanızın tamamında
                                 sizinleyiz.
@@ -153,33 +160,33 @@
         <section class="why-compare">
             <div class="why-compare__container">
                 <div class="why-compare__header">
-                    <span class="why-us__label" style="justify-content: center;">Farkımız</span>
-                    <h2 class="why-us__title">Neden Geleneksel Acentelik Değil?</h2>
+                    <span class="why-us__label" style="justify-content: center;" data-i18n="why.cmp.label">Farkımız</span>
+                    <h2 class="why-us__title" data-i18n="why.cmp.title">Neden Geleneksel Acentelik Değil?</h2>
                 </div>
 
                 <div class="why-compare__table">
                     <div class="why-compare__row why-compare__row--header">
-                        <div class="why-compare__col why-compare__col--feature">Özellik</div>
-                        <div class="why-compare__col why-compare__col--standard">Geleneksel Ajanslar</div>
+                        <div class="why-compare__col why-compare__col--feature" data-i18n="why.cmp.feature">Özellik</div>
+                        <div class="why-compare__col why-compare__col--standard" data-i18n="why.cmp.standard">Geleneksel Ajanslar</div>
                         <div class="why-compare__col why-compare__col--ob">OceansBound</div>
                     </div>
 
                     <div class="why-compare__row">
-                        <div class="why-compare__col why-compare__col--feature">Operasyon Saatleri</div>
-                        <div class="why-compare__col why-compare__col--standard">Sınırlı mesai saatleri</div>
+                        <div class="why-compare__col why-compare__col--feature" data-i18n="why.cmp.r1.feature">Operasyon Saatleri</div>
+                        <div class="why-compare__col why-compare__col--standard" data-i18n="why.cmp.r1.standard">Sınırlı mesai saatleri</div>
                         <div class="why-compare__col why-compare__col--ob">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2">
                                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                                 <polyline points="22 4 12 14.01 9 11.01"></polyline>
                             </svg>
-                            7/24 Kesintisiz Lojistik Destek
+                            <span data-i18n="why.cmp.r1.ob">7/24 Kesintisiz Lojistik Destek</span>
                         </div>
                     </div>
 
                     <div class="why-compare__row">
-                        <div class="why-compare__col why-compare__col--feature">Doküman Yönetimi</div>
-                        <div class="why-compare__col why-compare__col--standard">Fiziksel klasörler, yavaş süreçler
+                        <div class="why-compare__col why-compare__col--feature" data-i18n="why.cmp.r2.feature">Doküman Yönetimi</div>
+                        <div class="why-compare__col why-compare__col--standard" data-i18n="why.cmp.r2.standard">Fiziksel klasörler, yavaş süreçler
                         </div>
                         <div class="why-compare__col why-compare__col--ob">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -187,26 +194,26 @@
                                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                                 <polyline points="22 4 12 14.01 9 11.01"></polyline>
                             </svg>
-                            Dijital arşiv ve proaktif yenileme
+                            <span data-i18n="why.cmp.r2.ob">Dijital arşiv ve proaktif yenileme</span>
                         </div>
                     </div>
 
                     <div class="why-compare__row">
-                        <div class="why-compare__col why-compare__col--feature">Kriz Yaklaşımı</div>
-                        <div class="why-compare__col why-compare__col--standard">Kriz anında reaktif çözüm arama</div>
+                        <div class="why-compare__col why-compare__col--feature" data-i18n="why.cmp.r3.feature">Kriz Yaklaşımı</div>
+                        <div class="why-compare__col why-compare__col--standard" data-i18n="why.cmp.r3.standard">Kriz anında reaktif çözüm arama</div>
                         <div class="why-compare__col why-compare__col--ob">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2">
                                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                                 <polyline points="22 4 12 14.01 9 11.01"></polyline>
                             </svg>
-                            Krizi önceden öngören planlı strateji
+                            <span data-i18n="why.cmp.r3.ob">Krizi önceden öngören planlı strateji</span>
                         </div>
                     </div>
 
                     <div class="why-compare__row">
-                        <div class="why-compare__col why-compare__col--feature">Fiyatlandırma</div>
-                        <div class="why-compare__col why-compare__col--standard">Sürpriz komisyonlar ve ek masraflar
+                        <div class="why-compare__col why-compare__col--feature" data-i18n="why.cmp.r4.feature">Fiyatlandırma</div>
+                        <div class="why-compare__col why-compare__col--standard" data-i18n="why.cmp.r4.standard">Sürpriz komisyonlar ve ek masraflar
                         </div>
                         <div class="why-compare__col why-compare__col--ob">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -214,7 +221,7 @@
                                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                                 <polyline points="22 4 12 14.01 9 11.01"></polyline>
                             </svg>
-                            %100 Şeffaf bütçe garantisi
+                            <span data-i18n="why.cmp.r4.ob">%100 Şeffaf bütçe garantisi</span>
                         </div>
                     </div>
                 </div>
@@ -225,14 +232,14 @@
         <section class="intro" id="intro" aria-label="Tanıtım">
             <div class="intro__container">
                 <div class="why-us__header">
-                    <h2 class="why-us__title">Farkı Bizzat Yaşayın</h2>
+                    <h2 class="why-us__title" data-i18n="why.cta.title">Farkı Bizzat Yaşayın</h2>
                 </div>
-                <p class="intro__text">
+                <p class="intro__text" data-i18n="why.cta.text">
                     OceansBound ile operasyonlarınızı stresten arındırın. İlk adım için bizimle iletişime geçin,
                     rotanızı profesyonellerle güvenceye alalım.
                 </p>
 
-                <a href="../pages/iletisim.html" class="intro__cta" role="button">
+                <a href="../pages/iletisim.html" class="intro__cta" role="button" data-i18n="why.cta.btn">
                     Operasyonu Başlat
                 </a>
             </div>
@@ -248,24 +255,24 @@
                     <a href="../index.html" class="footer__logo" aria-label="OceansBound Anasayfa">
                         <img src="../public/footer-logo.png" alt="OceansBound Logo" class="footer__logo-icon">
                     </a>
-                    <p class="footer__desc">
+                    <p class="footer__desc" data-i18n-html="footer.desc">
                         Denizcilik sektöründeki derin tecrübemizle,<br>
                         operasyonlarınızı sorunsuz yönetiyoruz.
                     </p>
                 </div>
 
                 <div class="footer__links">
-                    <h4 class="footer__heading">Hızlı Erişim</h4>
+                    <h4 class="footer__heading" data-i18n="footer.quicklinks">Hızlı Erişim</h4>
                     <ul class="footer__list">
-                        <li><a href="../index.html">Anasayfa</a></li>
-                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                        <li><a href="hizmetler.html">Hizmetler</a></li>
-                        <li><a href="neden-biz.html">Neden Biz?</a></li>
+                        <li><a href="../index.html" data-i18n="nav.home">Anasayfa</a></li>
+                        <li><a href="hakkimizda.html" data-i18n="nav.about">Hakkımızda</a></li>
+                        <li><a href="hizmetler.html" data-i18n="nav.services">Hizmetler</a></li>
+                        <li><a href="neden-biz.html" data-i18n="nav.whyus">Neden Biz?</a></li>
                     </ul>
                 </div>
 
                 <div class="footer__contact">
-                    <h4 class="footer__heading">İletişim</h4>
+                    <h4 class="footer__heading" data-i18n="nav.contact">İletişim</h4>
                     <ul class="footer__list">
                         <li><a href="mailto:info@oceansbound.com">info@oceansbound.com</a></li>
                         <li><a href="tel:+905551234567">+90 555 123 45 67</a></li>
@@ -294,7 +301,7 @@
                 </div>
             </div>
             <div class="footer__bottom">
-                <p class="footer__copy">Copyright&copy;2026. Tüm Hakları Saklıdır.</p>
+                <p class="footer__copy" data-i18n="footer.copyright">Copyright&copy;2026. Tüm Hakları Saklıdır.</p>
                 <div class="footer__developer">
                     <img src="../public/moni-icon.ico" alt="Moni Yazılım" class="footer__developer-icon">
                     <span class="footer__copy">Moni Yazılım</span>

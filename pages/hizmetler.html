@@ -30,13 +30,20 @@
 
             <nav class="navbar__nav" id="navMenu" role="navigation" aria-label="Ana menü">
                 <ul class="navbar__list">
-                    <li><a href="../index.html" class="navbar__link">Anasayfa</a></li>
-                    <li><a href="hakkimizda.html" class="navbar__link">Hakkımızda</a></li>
-                    <li><a href="hizmetler.html" class="navbar__link navbar__link--active">Hizmetler</a></li>
-                    <li><a href="neden-biz.html" class="navbar__link">Neden Biz?</a></li>
-                    <li><a href="iletisim.html" class="navbar__link">İletişim</a></li>
+                    <li><a href="../index.html" class="navbar__link" data-i18n="nav.home">Anasayfa</a></li>
+                    <li><a href="hakkimizda.html" class="navbar__link" data-i18n="nav.about">Hakkımızda</a></li>
+                    <li><a href="hizmetler.html" class="navbar__link navbar__link--active" data-i18n="nav.services">Hizmetler</a></li>
+                    <li><a href="neden-biz.html" class="navbar__link" data-i18n="nav.whyus">Neden Biz?</a></li>
+                    <li><a href="iletisim.html" class="navbar__link" data-i18n="nav.contact">İletişim</a></li>
                 </ul>
             </nav>
+
+            <!-- Language Toggle -->
+            <button class="navbar__lang-toggle" id="langToggle" aria-label="Dil değiştir">
+                <span class="navbar__lang-option navbar__lang-option--active" data-lang="tr">TR</span>
+                <span class="navbar__lang-separator">|</span>
+                <span class="navbar__lang-option" data-lang="en">EN</span>
+            </button>
 
             <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Menüyü aç" aria-expanded="false"
                 aria-controls="navMenu">
@@ -54,9 +61,9 @@
         <section class="services-header">
             <div class="services-header__container">
                 <h1 class="hero__headline services-header__title">
-                    Operasyonel<br><span class="hero__headline-accent">Çözümlerimiz</span>
+                    <span data-i18n="svc.page.header">Operasyonel</span><br><span class="hero__headline-accent" data-i18n="svc.page.headerAccent">Çözümlerimiz</span>
                 </h1>
-                <p class="services-header__desc">
+                <p class="services-header__desc" data-i18n="svc.page.intro">
                     Yatınızın kusursuz bir operasyon geçirmesi için tüm sorumluluğu üstleniyoruz. Siz sadece rotanızı
                     belirleyin, gerisini uzman ekibimize bırakın.
                 </p>
@@ -70,8 +77,8 @@
                 <!-- Service 1 -->
                 <div class="services-list__card">
                     <span class="services-list__number">01</span>
-                    <h3 class="services-list__title">Profesyonel<br>Acentelik</h3>
-                    <p class="services-list__desc">
+                    <h3 class="services-list__title" data-i18n-html="svc.s1.title">Profesyonel<br>Acentelik</h3>
+                    <p class="services-list__desc" data-i18n="svc.s1.desc">
                         Liman işlemlerinizin başından sonuna kadar titizlikle yönetimi. Tüm resmi prosedürler, izinler,
                         liman evrakları ve yerel otoriteler arası koordinasyon tamamen bizim kontrolümüzde.
                     </p>
@@ -80,8 +87,8 @@
                 <!-- Service 2 -->
                 <div class="services-list__card">
                     <span class="services-list__number">02</span>
-                    <h3 class="services-list__title">Doküman<br>Takibi</h3>
-                    <p class="services-list__desc">
+                    <h3 class="services-list__title" data-i18n-html="svc.s2.title">Doküman<br>Takibi</h3>
+                    <p class="services-list__desc" data-i18n="svc.s2.desc">
                         Teknenize ait kritik belgelerin güncel tutulması, yenilenmesi ve gerektiğinde ilgili makamlara
                         iletilmesi. Gecikmelere ve cezai işlemlere asla mahal vermeyen kusursuz takip sistemi.
                     </p>
@@ -90,8 +97,8 @@
                 <!-- Service 3 -->
                 <div class="services-list__card">
                     <span class="services-list__number">03</span>
-                    <h3 class="services-list__title">Ekipman<br>Yönetimi</h3>
-                    <p class="services-list__desc">
+                    <h3 class="services-list__title" data-i18n-html="svc.s3.title">Ekipman<br>Yönetimi</h3>
+                    <p class="services-list__desc" data-i18n="svc.s3.desc">
                         Kritik ekipmanlarınızın bakım takvimi, tedarik süreci ve yedek parça lojistiği eksiksiz şekilde
                         takip edilir. Her seferinde seyre hazır ve güvende hissetmeniz sağlanır.
                     </p>
@@ -100,8 +107,8 @@
                 <!-- Service 4 -->
                 <div class="services-list__card">
                     <span class="services-list__number">04</span>
-                    <h3 class="services-list__title">Personel<br>Takibi</h3>
-                    <p class="services-list__desc">
+                    <h3 class="services-list__title" data-i18n-html="svc.s4.title">Personel<br>Takibi</h3>
+                    <p class="services-list__desc" data-i18n="svc.s4.desc">
                         Mürettebatınızın sertifika ve belgelerinin takibi, vize gereksinimleri, havaalanından tekneye
                         transfer organizasyonları ve tüm detaylı idari süreçler sorunsuz halledilir.
                     </p>
@@ -110,8 +117,8 @@
                 <!-- Service 5 -->
                 <div class="services-list__card">
                     <span class="services-list__number">05</span>
-                    <h3 class="services-list__title">Lojistik<br>Koordinasyon</h3>
-                    <p class="services-list__desc">
+                    <h3 class="services-list__title" data-i18n-html="svc.s5.title">Lojistik<br>Koordinasyon</h3>
+                    <p class="services-list__desc" data-i18n="svc.s5.desc">
                         Teknenize yapılacak teslimatlarda, kumanya ikmalinde, kritik parça transferlerinde ve operasyon
                         gerektiren diğer noktalarda uçtan uca uzman lojistik yönetimi.
                     </p>
@@ -120,8 +127,8 @@
                 <!-- Service 6 -->
                 <div class="services-list__card">
                     <span class="services-list__number">06</span>
-                    <h3 class="services-list__title">7/24 Kesintisiz<br>Teknik Destek</h3>
-                    <p class="services-list__desc">
+                    <h3 class="services-list__title" data-i18n-html="svc.s6.title">7/24 Kesintisiz<br>Teknik Destek</h3>
+                    <p class="services-list__desc" data-i18n="svc.s6.desc">
                         Seyriniz sırasında yaşanabilecek her türlü teknik arızada veya acil durumda, günün her saati
                         müdahale edebilecek özel iletişim hattı ve anında kriz çözümü.
                     </p>
@@ -133,32 +140,32 @@
         <!-- PROCESS SECTION -->
         <section class="process">
             <div class="process__container">
-                <span class="why-us__label">Nasıl Çalışırız?</span>
-                <h2 class="why-us__title">Kusursuz İşleyiş, Sıfır Gecikme</h2>
+                <span class="why-us__label" data-i18n="svc.proc.label">Nasıl Çalışırız?</span>
+                <h2 class="why-us__title" data-i18n="svc.proc.title">Kusursuz İşleyiş, Sıfır Gecikme</h2>
 
                 <div class="process__steps">
                     <div class="process__step">
                         <div class="process__icon">1</div>
-                        <h3 class="process__title">Talep & Analiz</h3>
-                        <p class="process__desc">İhtiyaçlarınızı dinler, eksikleri ve yapılması gereken idari işlemleri
+                        <h3 class="process__title" data-i18n="svc.proc.s1.title">Talep & Analiz</h3>
+                        <p class="process__desc" data-i18n="svc.proc.s1.desc">İhtiyaçlarınızı dinler, eksikleri ve yapılması gereken idari işlemleri
                             tespit ederiz.</p>
                     </div>
                     <div class="process__step">
                         <div class="process__icon">2</div>
-                        <h3 class="process__title">Planlama</h3>
-                        <p class="process__desc">Zaman çizergesini oluşturup, liman ve resmi dairelerdeki randevuları
+                        <h3 class="process__title" data-i18n="svc.proc.s2.title">Planlama</h3>
+                        <p class="process__desc" data-i18n="svc.proc.s2.desc">Zaman çizergesini oluşturup, liman ve resmi dairelerdeki randevuları
                             organize ederiz.</p>
                     </div>
                     <div class="process__step">
                         <div class="process__icon">3</div>
-                        <h3 class="process__title">Yürütme</h3>
-                        <p class="process__desc">Uzman ekibimiz sahaya iner. İkmal, dokümantasyon ve personel lojistiği
+                        <h3 class="process__title" data-i18n="svc.proc.s3.title">Yürütme</h3>
+                        <p class="process__desc" data-i18n="svc.proc.s3.desc">Uzman ekibimiz sahaya iner. İkmal, dokümantasyon ve personel lojistiği
                             tamamlanır.</p>
                     </div>
                     <div class="process__step">
                         <div class="process__icon">4</div>
-                        <h3 class="process__title">Kesintisiz Seyir</h3>
-                        <p class="process__desc">Her şey hazır olduğunda raporumuzu sunarız. Size sadece demir almak
+                        <h3 class="process__title" data-i18n="svc.proc.s4.title">Kesintisiz Seyir</h3>
+                        <p class="process__desc" data-i18n="svc.proc.s4.desc">Her şey hazır olduğunda raporumuzu sunarız. Size sadece demir almak
                             kalır.</p>
                     </div>
                 </div>
@@ -168,25 +175,25 @@
         <!-- FAQ SECTION -->
         <section class="faq">
             <div class="faq__header">
-                <span class="why-us__label">S.S.S</span>
-                <h2 class="why-us__title">Sıkça Sorulan Sorular</h2>
+                <span class="why-us__label" data-i18n="svc.faq.label">S.S.S</span>
+                <h2 class="why-us__title" data-i18n="svc.faq.title">Sıkça Sorulan Sorular</h2>
             </div>
             <div class="faq__list">
                 <div class="faq__item">
-                    <h3 class="faq__question">Acentelik hizmetiniz hangi bölgeleri kapsıyor?</h3>
-                    <p class="faq__answer">Operasyonlarımız global düzeyde uzman bir ağ tarafından desteklenmektedir.
+                    <h3 class="faq__question" data-i18n="svc.faq.q1">Acentelik hizmetiniz hangi bölgeleri kapsıyor?</h3>
+                    <p class="faq__answer" data-i18n="svc.faq.a1">Operasyonlarımız global düzeyde uzman bir ağ tarafından desteklenmektedir.
                         Özellikle popüler yat rotaları, Akdeniz ve Ege dilleri başta olmak üzere dünyanın her noktasında
                         destek sunabiliyoruz.</p>
                 </div>
                 <div class="faq__item">
-                    <h3 class="faq__question">Doküman yenileme işlemlerini sadece limandayken mi yapıyorsunuz?</h3>
-                    <p class="faq__answer">Hayır, dokümanlarınız bulut altyapımızda takip edilir. Süresi dolmaya
+                    <h3 class="faq__question" data-i18n="svc.faq.q2">Doküman yenileme işlemlerini sadece limandayken mi yapıyorsunuz?</h3>
+                    <p class="faq__answer" data-i18n="svc.faq.a2">Hayır, dokümanlarınız bulut altyapımızda takip edilir. Süresi dolmaya
                         yaklaşan belgeler için önceden aksiyon alır ve tekneniz denizdeyken bile bürokratik süreci sizin
                         adınıza yürütürüz.</p>
                 </div>
                 <div class="faq__item">
-                    <h3 class="faq__question">Acil yedek parça ihtiyacında lojistik desteğiniz var mı?</h3>
-                    <p class="faq__answer">Kesinlikle. Geniş lojistik ağımız ve hızlı teslimat partnerlerimiz sayesinde,
+                    <h3 class="faq__question" data-i18n="svc.faq.q3">Acil yedek parça ihtiyacında lojistik desteğiniz var mı?</h3>
+                    <p class="faq__answer" data-i18n="svc.faq.a3">Kesinlikle. Geniş lojistik ağımız ve hızlı teslimat partnerlerimiz sayesinde,
                         arızalanan parçanın yerine yenisinin dünyanın neresinden olursa olsun temin edilip teknenize
                         ulaştırılmasını sağlıyoruz.</p>
                 </div>
@@ -197,14 +204,14 @@
         <section class="intro" id="intro" aria-label="Tanıtım">
             <div class="intro__container">
                 <div class="why-us__header">
-                    <h2 class="why-us__title">Tüm Operasyonu Bize Bırakın</h2>
+                    <h2 class="why-us__title" data-i18n="svc.cta.title">Tüm Operasyonu Bize Bırakın</h2>
                 </div>
-                <p class="intro__text">
+                <p class="intro__text" data-i18n="svc.cta.text">
                     Detaylı hizmet paketlerimiz ve teknenize özel sunduğumuz yönetim planları için hemen iletişime
                     geçin.
                 </p>
 
-                <a href="../pages/iletisim.html" class="intro__cta" role="button">
+                <a href="../pages/iletisim.html" class="intro__cta" role="button" data-i18n="svc.cta.btn">
                     İletişime Geçelim
                 </a>
             </div>
@@ -220,24 +227,24 @@
                     <a href="../index.html" class="footer__logo" aria-label="OceansBound Anasayfa">
                         <img src="../public/footer-logo.png" alt="OceansBound Logo" class="footer__logo-icon">
                     </a>
-                    <p class="footer__desc">
+                    <p class="footer__desc" data-i18n-html="footer.desc">
                         Denizcilik sektöründeki derin tecrübemizle,<br>
                         operasyonlarınızı sorunsuz yönetiyoruz.
                     </p>
                 </div>
 
                 <div class="footer__links">
-                    <h4 class="footer__heading">Hızlı Erişim</h4>
+                    <h4 class="footer__heading" data-i18n="footer.quicklinks">Hızlı Erişim</h4>
                     <ul class="footer__list">
-                        <li><a href="../index.html">Anasayfa</a></li>
-                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                        <li><a href="hizmetler.html">Hizmetler</a></li>
-                        <li><a href="neden-biz.html">Neden Biz?</a></li>
+                        <li><a href="../index.html" data-i18n="nav.home">Anasayfa</a></li>
+                        <li><a href="hakkimizda.html" data-i18n="nav.about">Hakkımızda</a></li>
+                        <li><a href="hizmetler.html" data-i18n="nav.services">Hizmetler</a></li>
+                        <li><a href="neden-biz.html" data-i18n="nav.whyus">Neden Biz?</a></li>
                     </ul>
                 </div>
 
                 <div class="footer__contact">
-                    <h4 class="footer__heading">İletişim</h4>
+                    <h4 class="footer__heading" data-i18n="nav.contact">İletişim</h4>
                     <ul class="footer__list">
                         <li><a href="mailto:info@oceansbound.com">info@oceansbound.com</a></li>
                         <li><a href="tel:+905551234567">+90 555 123 45 67</a></li>
@@ -266,7 +273,7 @@
                 </div>
             </div>
             <div class="footer__bottom">
-                <p class="footer__copy">Copyright&copy;2026. Tüm Hakları Saklıdır.</p>
+                <p class="footer__copy" data-i18n="footer.copyright">Copyright&copy;2026. Tüm Hakları Saklıdır.</p>
                 <div class="footer__developer">
                     <img src="../public/moni-icon.ico" alt="Moni Yazılım" class="footer__developer-icon">
                     <span class="footer__copy">Moni Yazılım</span>

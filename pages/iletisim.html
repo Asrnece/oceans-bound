@@ -30,13 +30,20 @@
 
             <nav class="navbar__nav" id="navMenu" role="navigation" aria-label="Ana menü">
                 <ul class="navbar__list">
-                    <li><a href="../index.html" class="navbar__link">Anasayfa</a></li>
-                    <li><a href="hakkimizda.html" class="navbar__link">Hakkımızda</a></li>
-                    <li><a href="hizmetler.html" class="navbar__link">Hizmetler</a></li>
-                    <li><a href="neden-biz.html" class="navbar__link">Neden Biz?</a></li>
-                    <li><a href="iletisim.html" class="navbar__link navbar__link--active">İletişim</a></li>
+                    <li><a href="../index.html" class="navbar__link" data-i18n="nav.home">Anasayfa</a></li>
+                    <li><a href="hakkimizda.html" class="navbar__link" data-i18n="nav.about">Hakkımızda</a></li>
+                    <li><a href="hizmetler.html" class="navbar__link" data-i18n="nav.services">Hizmetler</a></li>
+                    <li><a href="neden-biz.html" class="navbar__link" data-i18n="nav.whyus">Neden Biz?</a></li>
+                    <li><a href="iletisim.html" class="navbar__link navbar__link--active" data-i18n="nav.contact">İletişim</a></li>
                 </ul>
             </nav>
+
+            <!-- Language Toggle -->
+            <button class="navbar__lang-toggle" id="langToggle" aria-label="Dil değiştir">
+                <span class="navbar__lang-option navbar__lang-option--active" data-lang="tr">TR</span>
+                <span class="navbar__lang-separator">|</span>
+                <span class="navbar__lang-option" data-lang="en">EN</span>
+            </button>
 
             <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Menüyü aç" aria-expanded="false"
                 aria-controls="navMenu">
@@ -53,10 +60,10 @@
         <!-- HEADER SECTION -->
         <section class="services-header mt-8">
             <div class="services-header__container">
-                <h1 class="hero__headline services-header__title">
-                    Rotanızı Bize<br><span class="hero__headline-accent">Bildirin</span>
+                <h1 class="hero__headline services-header__title" data-i18n-html="cnt.page.header">
+                    Rotanızı Bize<br><span class="hero__headline-accent" data-i18n="cnt.page.headerAccent">Bildirin</span>
                 </h1>
-                <p class="services-header__desc">
+                <p class="services-header__desc" data-i18n="cnt.page.intro">
                     Tüm operasyonel detayları OceansBound uzmanlığına devredin. İster genel bir bilgi talebi, ister acil
                     destek için bizimle anında iletişime geçebilirsiniz.
                 </p>
@@ -78,8 +85,8 @@
                             <path d="M14.05 6A5 5 0 0 1 18 10" />
                         </svg>
                     </div>
-                    <h3 class="contact-card__title">7/24 Acil Hat</h3>
-                    <p class="services-list__desc" style="margin-bottom:0.5rem;">Kriz anında direkt ulaşın</p>
+                    <h3 class="contact-card__title" data-i18n="cnt.card1.title">7/24 Acil Hat</h3>
+                    <p class="services-list__desc" style="margin-bottom:0.5rem;" data-i18n="cnt.card1.desc">Kriz anında direkt ulaşın</p>
                     <a href="tel:+905551234567" class="contact-card__value">+90 555 123 45 67</a>
                 </div>
 
@@ -92,8 +99,8 @@
                             <polyline points="22,6 12,13 2,6" />
                         </svg>
                     </div>
-                    <h3 class="contact-card__title">E-Posta</h3>
-                    <p class="services-list__desc" style="margin-bottom:0.5rem;">Dokümanlar ve Planlama</p>
+                    <h3 class="contact-card__title" data-i18n="cnt.card2.title">E-Posta</h3>
+                    <p class="services-list__desc" style="margin-bottom:0.5rem;" data-i18n="cnt.card2.desc">Dokümanlar ve Planlama</p>
                     <a href="mailto:info@oceansbound.com" class="contact-card__value">info@oceansbound.com</a>
                 </div>
 
@@ -106,8 +113,8 @@
                             <circle cx="12" cy="10" r="3" />
                         </svg>
                     </div>
-                    <h3 class="contact-card__title">Merkez Ofis</h3>
-                    <p class="services-list__desc" style="margin-bottom:0.5rem;">Operasyon Merkezi</p>
+                    <h3 class="contact-card__title" data-i18n="cnt.card3.title">Merkez Ofis</h3>
+                    <p class="services-list__desc" style="margin-bottom:0.5rem;" data-i18n="cnt.card3.desc">Operasyon Merkezi</p>
                     <span class="contact-card__value" style="cursor:default;">Denizciler Cad. No:1, İstanbul</span>
                 </div>
 
@@ -122,9 +129,9 @@
                                 d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
                         </svg>
                     </div>
-                    <h3 class="contact-card__title">Global Ağ</h3>
-                    <p class="services-list__desc" style="margin-bottom:0.5rem;">Tüm Limanlar</p>
-                    <span class="contact-card__value" style="cursor:default;">Dünya Çapında Hizmet</span>
+                    <h3 class="contact-card__title" data-i18n="cnt.card4.title">Global Ağ</h3>
+                    <p class="services-list__desc" style="margin-bottom:0.5rem;" data-i18n="cnt.card4.desc">Tüm Limanlar</p>
+                    <span class="contact-card__value" style="cursor:default;" data-i18n="cnt.card4.value">Dünya Çapında Hizmet</span>
                 </div>
             </div>
         </section>
@@ -134,37 +141,38 @@
 
             <!-- Form Area -->
             <div class="contact-form__wrapper">
-                <h2 class="contact-form__title">Mesaj Gönderin</h2>
-                <p class="contact-form__desc">Size en kısa sürede geri dönüş yapmak için iletişim bilgilerinizi bizimle
+                <h2 class="contact-form__title" data-i18n="cnt.form.title">Mesaj Gönderin</h2>
+                <p class="contact-form__desc" data-i18n="cnt.form.desc">Size en kısa sürede geri dönüş yapmak için iletişim bilgilerinizi bizimle
                     paylaşın.</p>
 
                 <form class="contact-form" action="#" method="POST">
                     <div class="form-group">
-                        <label for="name">Adınız Soyadınız / Tekne Adı</label>
+                        <label for="name" data-i18n="cnt.form.nameLabel">Adınız Soyadınız / Tekne Adı</label>
                         <input type="text" id="name" name="name" placeholder="Örn: Kaptan Ahmet Yılmaz / S/Y Poseidon"
-                            required>
+                            data-i18n-placeholder="cnt.form.namePlaceholder" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="email">E-Posta Adresi</label>
-                        <input type="email" id="email" name="email" placeholder="ornek@posta.com" required>
+                        <label for="email" data-i18n="cnt.form.emailLabel">E-Posta Adresi</label>
+                        <input type="email" id="email" name="email" placeholder="ornek@posta.com" 
+                            data-i18n-placeholder="cnt.form.emailPlaceholder" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="message">Mesajınız / Talebiniz</label>
+                        <label for="message" data-i18n="cnt.form.msgLabel">Mesajınız / Talebiniz</label>
                         <textarea id="message" name="message" placeholder="Acentelik, Lojistik, Doküman Yenileme..."
-                            required></textarea>
+                            data-i18n-placeholder="cnt.form.msgPlaceholder" required></textarea>
                     </div>
 
-                    <button type="submit">Gönder ve Rotayı Başlat</button>
+                    <button type="submit" data-i18n="cnt.form.btn">Gönder ve Rotayı Başlat</button>
                 </form>
             </div>
 
             <!-- Global Graphic Statement -->
             <div class="contact-global">
                 <div class="contact-global__bg"></div>
-                <h3 class="contact-global__title">Siz Demir Alın,<br>Gerisi Bizde.</h3>
-                <p class="contact-global__text">
+                <h3 class="contact-global__title" data-i18n-html="cnt.global.title">Siz Demir Alın,<br>Gerisi Bizde.</h3>
+                <p class="contact-global__text" data-i18n-html="cnt.global.text">
                     Operasyonların lokasyonu neresi olursa olsun profesyonel ekibimiz her kıtada, her limanda
                     standartlara uygun ve eksiksiz bir şekilde yanınızdadır.
                     <br><br>
@@ -184,24 +192,24 @@
                     <a href="../index.html" class="footer__logo" aria-label="OceansBound Anasayfa">
                         <img src="../public/footer-logo.png" alt="OceansBound Logo" class="footer__logo-icon">
                     </a>
-                    <p class="footer__desc">
+                    <p class="footer__desc" data-i18n-html="footer.desc">
                         Denizcilik sektöründeki derin tecrübemizle,<br>
                         operasyonlarınızı sorunsuz yönetiyoruz.
                     </p>
                 </div>
 
                 <div class="footer__links">
-                    <h4 class="footer__heading">Hızlı Erişim</h4>
+                    <h4 class="footer__heading" data-i18n="footer.quicklinks">Hızlı Erişim</h4>
                     <ul class="footer__list">
-                        <li><a href="../index.html">Anasayfa</a></li>
-                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                        <li><a href="hizmetler.html">Hizmetler</a></li>
-                        <li><a href="neden-biz.html">Neden Biz?</a></li>
+                        <li><a href="../index.html" data-i18n="nav.home">Anasayfa</a></li>
+                        <li><a href="hakkimizda.html" data-i18n="nav.about">Hakkımızda</a></li>
+                        <li><a href="hizmetler.html" data-i18n="nav.services">Hizmetler</a></li>
+                        <li><a href="neden-biz.html" data-i18n="nav.whyus">Neden Biz?</a></li>
                     </ul>
                 </div>
 
                 <div class="footer__contact">
-                    <h4 class="footer__heading">İletişim</h4>
+                    <h4 class="footer__heading" data-i18n="nav.contact">İletişim</h4>
                     <ul class="footer__list">
                         <li><a href="mailto:info@oceansbound.com">info@oceansbound.com</a></li>
                         <li><a href="tel:+905551234567">+90 555 123 45 67</a></li>
@@ -230,7 +238,7 @@
                 </div>
             </div>
             <div class="footer__bottom">
-                <p class="footer__copy">Copyright&copy;2026. Tüm Hakları Saklıdır.</p>
+                <p class="footer__copy" data-i18n="footer.copyright">Copyright&copy;2026. Tüm Hakları Saklıdır.</p>
                 <div class="footer__developer">
                     <img src="../public/moni-icon.ico" alt="Moni Yazılım" class="footer__developer-icon">
                     <span class="footer__copy">Moni Yazılım</span>

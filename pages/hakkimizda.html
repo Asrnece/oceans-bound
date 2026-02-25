@@ -30,13 +30,20 @@
 
             <nav class="navbar__nav" id="navMenu" role="navigation" aria-label="Ana menü">
                 <ul class="navbar__list">
-                    <li><a href="../index.html" class="navbar__link">Anasayfa</a></li>
-                    <li><a href="hakkimizda.html" class="navbar__link navbar__link--active">Hakkımızda</a></li>
-                    <li><a href="hizmetler.html" class="navbar__link">Hizmetler</a></li>
-                    <li><a href="neden-biz.html" class="navbar__link">Neden Biz?</a></li>
-                    <li><a href="iletisim.html" class="navbar__link">İletişim</a></li>
+                    <li><a href="../index.html" class="navbar__link" data-i18n="nav.home">Anasayfa</a></li>
+                    <li><a href="hakkimizda.html" class="navbar__link navbar__link--active" data-i18n="nav.about">Hakkımızda</a></li>
+                    <li><a href="hizmetler.html" class="navbar__link" data-i18n="nav.services">Hizmetler</a></li>
+                    <li><a href="neden-biz.html" class="navbar__link" data-i18n="nav.whyus">Neden Biz?</a></li>
+                    <li><a href="iletisim.html" class="navbar__link" data-i18n="nav.contact">İletişim</a></li>
                 </ul>
             </nav>
+
+            <!-- Language Toggle -->
+            <button class="navbar__lang-toggle" id="langToggle" aria-label="Dil değiştir">
+                <span class="navbar__lang-option navbar__lang-option--active" data-lang="tr">TR</span>
+                <span class="navbar__lang-separator">|</span>
+                <span class="navbar__lang-option" data-lang="en">EN</span>
+            </button>
 
             <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Menüyü aç" aria-expanded="false"
                 aria-controls="navMenu">
@@ -54,9 +61,9 @@
         <section class="about-header">
             <div class="about-header__container">
                 <h1 class="hero__headline about-header__title">
-                    Geleceğin Denizcilik<br><span class="hero__headline-accent">Operasyonları</span>
+                    <span data-i18n="about.page.header">Geleceğin Denizcilik</span><br><span class="hero__headline-accent" data-i18n="about.page.headerAccent">Operasyonları</span>
                 </h1>
-                <p class="about-summary__desc about-header__desc">
+                <p class="about-summary__desc about-header__desc" data-i18n="about.page.intro">
                     Denizcilik sektöründeki derin tecrübemiz ve uzman kadromuzla, operasyonlarınızı sorunsuz ve verimli
                     bir şekilde yönetiyoruz.
                 </p>
@@ -68,14 +75,14 @@
             <div class="about-story__grid">
 
                 <div class="about-story__text">
-                    <h2 class="about-summary__title about-story__title">Denizde Doğan<br>Bir Tutku</h2>
-                    <p class="about-summary__desc about-story__desc">
+                    <h2 class="about-summary__title about-story__title" data-i18n-html="about.story.heading">Denizde Doğan<br>Bir Tutku</h2>
+                    <p class="about-summary__desc about-story__desc" data-i18n="about.story.p1">
                         OceansBound, denizcilik operasyonlarının karmaşıklığını ve kaptanların omuzlarındaki idari yükü
                         hafifletmek amacıyla kuruldu. Yıllarca süren denizcilik ve liman yönetimi tecrübemiz, bize bir
                         gerçeği gösterdi: Denizin gerçek ruhunu yaşamak için, karadaki detayların kusursuz bir şekilde
                         yönetilmesi gerekir.
                     </p>
-                    <p class="about-summary__desc">
+                    <p class="about-summary__desc" data-i18n="about.story.p2">
                         Amacımız, uluslararası denizcilik standartlarına uygun, şeffaf ve güvenilir bir acentelik
                         hizmeti sunmak. Müşterilerimizin ihtiyaçlarına özel çözümler üreterek, seyir keyfini maksimuma
                         çıkarıyoruz.
@@ -83,10 +90,7 @@
                 </div>
 
                 <div class="about-story__image">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)"
-                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                    </svg>
+                    <img src="../public/hakkimizda.jpeg" alt="liman" class="about-story__img">
                 </div>
 
             </div>
@@ -95,15 +99,15 @@
         <!-- PHILOSOPHY SECTION -->
         <section class="about-philosophy">
             <div class="about-philosophy__container">
-                <span class="why-us__label about-philosophy__label">Felsefemiz</span>
-                <h2 class="why-us__title about-philosophy__title">Siz Denize Odaklanın,<br>Geri Kalanını Bize
+                <span class="why-us__label about-philosophy__label" data-i18n="about.phil.label">Felsefemiz</span>
+                <h2 class="why-us__title about-philosophy__title" data-i18n-html="about.phil.title">Siz Denize Odaklanın,<br>Geri Kalanını Bize
                     Bırakın</h2>
-                <p class="intro__text about-philosophy__text">
+                <p class="intro__text about-philosophy__text" data-i18n="about.phil.p1">
                     Yat sahipleri ve kaptanları için en değerli şey zamandır. Biz, o değerli zamanın liman
                     prosedürleriyle, idari süreçlerle değil — açık denizde, güneşin altında geçirilmesi gerektiğine
                     inanıyoruz.
                 </p>
-                <p class="intro__text about-philosophy__text--last">
+                <p class="intro__text about-philosophy__text--last" data-i18n="about.phil.p2">
                     Siz rotanızı belirleyin, biz arkanızdaki rüzgar, limandaki güvenli iskeleniz olalım. Tüm resmi
                     işlemlerden lojistik desteklere kadar her detayı üstlenerek, size sadece ufuk çizgisine odaklanma
                     özgürlüğünü sunuyoruz.
@@ -114,8 +118,8 @@
         <!-- VALUES SECTION -->
         <section class="about-values">
             <div class="about-values__header">
-                <span class="services-summary__label about-values__label">Değerlerimiz</span>
-                <h2 class="services-summary__title">Bizi Biz Yapan İlkeler</h2>
+                <span class="services-summary__label about-values__label" data-i18n="about.val.label">Değerlerimiz</span>
+                <h2 class="services-summary__title" data-i18n="about.val.heading">Bizi Biz Yapan İlkeler</h2>
             </div>
 
             <div class="services-summary__grid about-values__grid">
@@ -126,8 +130,8 @@
                             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                         </svg>
                     </div>
-                    <h3 class="services-summary__card-title">Güven & Şeffaflık</h3>
-                    <p class="services-summary__card-desc">Tüm süreçlerde şeffaflık ve dürüstlük temel ilkemizdir.
+                    <h3 class="services-summary__card-title" data-i18n="about.val1.title">Güven & Şeffaflık</h3>
+                    <p class="services-summary__card-desc" data-i18n="about.val1.desc">Tüm süreçlerde şeffaflık ve dürüstlük temel ilkemizdir.
                         Müşterilerimizle uzun soluklu, güvene dayalı ilişkiler kurarız.</p>
                 </div>
                 <div class="services-summary__card">
@@ -138,8 +142,8 @@
                             <polyline points="12 6 12 12 16 14" />
                         </svg>
                     </div>
-                    <h3 class="services-summary__card-title">Zaman Yönetimi</h3>
-                    <p class="services-summary__card-desc">Denizcilikte zaman en kritik faktördür. İşlemleri en kısa
+                    <h3 class="services-summary__card-title" data-i18n="about.val2.title">Zaman Yönetimi</h3>
+                    <p class="services-summary__card-desc" data-i18n="about.val2.desc">Denizcilikte zaman en kritik faktördür. İşlemleri en kısa
                         sürede, kusursuz bir şekilde tamamlamak için var gücümüzle çalışırız.</p>
                 </div>
                 <div class="services-summary__card">
@@ -152,8 +156,8 @@
                             <line x1="12" y1="22.08" x2="12" y2="12" />
                         </svg>
                     </div>
-                    <h3 class="services-summary__card-title">Mükemmeliyetiyetçilik</h3>
-                    <p class="services-summary__card-desc">Sıradanla yetinmeyiz. En iyi hizmet kalitesini sunmak için
+                    <h3 class="services-summary__card-title" data-i18n="about.val3.title">Mükemmeliyetiyetcilik</h3>
+                    <p class="services-summary__card-desc" data-i18n="about.val3.desc">Sıradanla yetinmeyiz. En iyi hizmet kalitesini sunmak için
                         sürekli gelişime, detaylara ve yeniliğe odaklanırız.</p>
                 </div>
             </div>
@@ -163,14 +167,14 @@
         <section class="intro" id="intro" aria-label="Tanıtım">
             <div class="intro__container">
                 <div class="why-us__header">
-                    <h2 class="why-us__title">Rotanızı Birlikte Çizelim</h2>
+                    <h2 class="why-us__title" data-i18n="about.cta.heading">Rotanızı Birlikte Çizelim</h2>
                 </div>
-                <p class="intro__text">
+                <p class="intro__text" data-i18n="about.cta.text">
                     Denizcilik operasyonlarınızda profesyonel destek almak ve zamanınızı denizin keyfini çıkarmaya
                     ayırmak için bizimle iletişime geçin.
                 </p>
 
-                <a href="../pages/iletisim.html" class="intro__cta" role="button">
+                <a href="../pages/iletisim.html" class="intro__cta" role="button" data-i18n="about.cta.btn">
                     İletişime Geçelim
                 </a>
             </div>
@@ -185,24 +189,24 @@
                     <a href="../index.html" class="footer__logo" aria-label="OceansBound Anasayfa">
                         <img src="../public/footer-logo.png" alt="OceansBound Logo" class="footer__logo-icon">
                     </a>
-                    <p class="footer__desc">
+                    <p class="footer__desc" data-i18n-html="footer.desc">
                         Denizcilik sektöründeki derin tecrübemizle,<br>
                         operasyonlarınızı sorunsuz yönetiyoruz.
                     </p>
                 </div>
 
                 <div class="footer__links">
-                    <h4 class="footer__heading">Hızlı Erişim</h4>
+                    <h4 class="footer__heading" data-i18n="footer.quicklinks">Hızlı Erişim</h4>
                     <ul class="footer__list">
-                        <li><a href="../index.html">Anasayfa</a></li>
-                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                        <li><a href="hizmetler.html">Hizmetler</a></li>
-                        <li><a href="neden-biz.html">Neden Biz?</a></li>
+                        <li><a href="../index.html" data-i18n="nav.home">Anasayfa</a></li>
+                        <li><a href="hakkimizda.html" data-i18n="nav.about">Hakkımızda</a></li>
+                        <li><a href="hizmetler.html" data-i18n="nav.services">Hizmetler</a></li>
+                        <li><a href="neden-biz.html" data-i18n="nav.whyus">Neden Biz?</a></li>
                     </ul>
                 </div>
 
                 <div class="footer__contact">
-                    <h4 class="footer__heading">İletişim</h4>
+                    <h4 class="footer__heading" data-i18n="nav.contact">İletişim</h4>
                     <ul class="footer__list">
                         <li><a href="mailto:info@oceansbound.com">info@oceansbound.com</a></li>
                         <li><a href="tel:+905551234567">+90 555 123 45 67</a></li>
@@ -231,7 +235,7 @@
                 </div>
             </div>
             <div class="footer__bottom">
-                <p class="footer__copy">Copyright&copy;2026. Tüm Hakları Saklıdır.</p>
+                <p class="footer__copy" data-i18n="footer.copyright">Copyright&copy;2026. Tüm Hakları Saklıdır.</p>
                 <div class="footer__developer">
                     <img src="../public/moni-icon.ico" alt="Moni Yazılım" class="footer__developer-icon">
                     <span class="footer__copy">Moni Yazılım</span>

@@ -29,13 +29,20 @@
 
       <nav class="navbar__nav" id="navMenu" role="navigation" aria-label="Ana menü">
         <ul class="navbar__list">
-          <li><a href="index.html" class="navbar__link navbar__link--active">Anasayfa</a></li>
-          <li><a href="pages/hakkimizda.html" class="navbar__link">Hakkımızda</a></li>
-          <li><a href="pages/hizmetler.html" class="navbar__link">Hizmetler</a></li>
-          <li><a href="pages/neden-biz.html" class="navbar__link">Neden Biz?</a></li>
-          <li><a href="pages/iletisim.html" class="navbar__link">İletişim</a></li>
+          <li><a href="index.html" class="navbar__link navbar__link--active" data-i18n="nav.home">Anasayfa</a></li>
+          <li><a href="pages/hakkimizda.html" class="navbar__link" data-i18n="nav.about">Hakkımızda</a></li>
+          <li><a href="pages/hizmetler.html" class="navbar__link" data-i18n="nav.services">Hizmetler</a></li>
+          <li><a href="pages/neden-biz.html" class="navbar__link" data-i18n="nav.whyus">Neden Biz?</a></li>
+          <li><a href="pages/iletisim.html" class="navbar__link" data-i18n="nav.contact">İletişim</a></li>
         </ul>
       </nav>
+
+      <!-- Language Toggle -->
+      <button class="navbar__lang-toggle" id="langToggle" aria-label="Dil değiştir">
+        <span class="navbar__lang-option navbar__lang-option--active" data-lang="tr">TR</span>
+        <span class="navbar__lang-separator">|</span>
+        <span class="navbar__lang-option" data-lang="en">EN</span>
+      </button>
 
       <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Menüyü aç" aria-expanded="false"
         aria-controls="navMenu">
@@ -66,14 +73,14 @@
         </div>
 
         <h1 class="hero__headline">
-          Siz Denize Odaklanın<br>
-          <span class="hero__headline-accent">Geriye Kalanı Biz Halledelim</span>
+          <span data-i18n="hero.title">Siz Denize Odaklanın</span><br>
+          <span class="hero__headline-accent" data-i18n="hero.subtitle">Geriye Kalanı Biz Halledelim</span>
         </h1>
       </div>
 
       <!-- Scroll indicator -->
       <div class="hero__scroll-indicator" aria-hidden="true">
-        <span class="hero__scroll-text">Keşfet</span>
+        <span class="hero__scroll-text" data-i18n="hero.discover">Keşfet</span>
         <div class="hero__scroll-chevron">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
             stroke-linecap="round" stroke-linejoin="round">
@@ -88,29 +95,29 @@
     <section class="about-summary" id="about-summary" aria-label="Hakkımızda Özet">
       <div class="about-summary__container">
         <div class="about-summary__text">
-          <span class="about-summary__label">Hakkımızda</span>
-          <h2 class="about-summary__title">Denizcilik Operasyonlarında<br>Güvenilir Ortağınız</h2>
-          <p class="about-summary__desc">
+          <span class="about-summary__label" data-i18n="about.label">Hakkımızda</span>
+          <h2 class="about-summary__title" data-i18n-html="about.title">Denizcilik Operasyonlarında<br>Güvenilir Ortağınız</h2>
+          <p class="about-summary__desc" data-i18n="about.desc">
             OceansBound olarak, liman yönetiminden gemi operasyonlarına kadar geniş bir yelpazede
             hizmet sunuyoruz. Denizcilik sektöründeki derin tecrübemiz ve uzman kadromuzla,
             operasyonlarınızı sorunsuz ve verimli bir şekilde yönetiyoruz.
           </p>
-          <a href="pages/hakkimizda.html" class="about-summary__link">
+          <a href="pages/hakkimizda.html" class="about-summary__link" data-i18n="about.link">
             Daha Fazla Bilgi →
           </a>
         </div>
         <div class="about-summary__stats">
           <div class="about-summary__stat">
             <span class="about-summary__stat-number">15+</span>
-            <span class="about-summary__stat-label">Yıllık Deneyim</span>
+            <span class="about-summary__stat-label" data-i18n="about.stat1">Yıllık Deneyim</span>
           </div>
           <div class="about-summary__stat">
             <span class="about-summary__stat-number">200+</span>
-            <span class="about-summary__stat-label">Tamamlanan Operasyon</span>
+            <span class="about-summary__stat-label" data-i18n="about.stat2">Tamamlanan Operasyon</span>
           </div>
           <div class="about-summary__stat">
             <span class="about-summary__stat-number">50+</span>
-            <span class="about-summary__stat-label">Liman Ağı</span>
+            <span class="about-summary__stat-label" data-i18n="about.stat3">Liman Ağı</span>
           </div>
         </div>
       </div>
@@ -120,49 +127,49 @@
     <section class="services-summary" id="services-summary" aria-label="Hizmetlerimiz Özet">
       <div class="services-summary__container">
         <div class="services-summary__header">
-          <span class="services-summary__label">Hizmetlerimiz</span>
-          <h2 class="services-summary__title">Uçtan Uca Denizcilik<br>Operasyon Yönetimi</h2>
+          <span class="services-summary__label" data-i18n="services.label">Hizmetlerimiz</span>
+          <h2 class="services-summary__title" data-i18n-html="services.title">Uçtan Uca Denizcilik<br>Operasyon Yönetimi</h2>
         </div>
         <div class="services-summary__grid">
 
           <div class="services-summary__card">
             <span class="services-summary__number">01</span>
-            <h3 class="services-summary__card-title">Profesyonel<br>Acentelik</h3>
-            <p class="services-summary__card-desc">Liman işlemlerinin titizlikle yönetimi. Prosedürler, belgeler ve
+            <h3 class="services-summary__card-title" data-i18n-html="services.card1.title">Profesyonel<br>Acentelik</h3>
+            <p class="services-summary__card-desc" data-i18n="services.card1.desc">Liman işlemlerinin titizlikle yönetimi. Prosüdürler, belgeler ve
               koordinasyon bizde.</p>
           </div>
 
           <div class="services-summary__card">
             <span class="services-summary__number">02</span>
-            <h3 class="services-summary__card-title">Doküman<br>Takibi</h3>
-            <p class="services-summary__card-desc">Kritik belgelerin güncel tutulması, yenilenmesi ve ilgili makamlara
+            <h3 class="services-summary__card-title" data-i18n-html="services.card2.title">Doküman<br>Takibi</h3>
+            <p class="services-summary__card-desc" data-i18n="services.card2.desc">Kritik belgelerin güncel tutulması, yenilenmesi ve ilgili makamlara
               iletilmesi.</p>
           </div>
 
           <div class="services-summary__card">
             <span class="services-summary__number">03</span>
-            <h3 class="services-summary__card-title">Ekipman<br>Yönetimi</h3>
-            <p class="services-summary__card-desc">Bakım takvimi, tedarik süreci ve lojistik koordinasyonunun eksiksiz
+            <h3 class="services-summary__card-title" data-i18n-html="services.card3.title">Ekipman<br>Yönetimi</h3>
+            <p class="services-summary__card-desc" data-i18n="services.card3.desc">Bakım takvimi, tedarik süreci ve lojistik koordinasyonunun eksiksiz
               takibi.</p>
           </div>
 
           <div class="services-summary__card">
             <span class="services-summary__number">04</span>
-            <h3 class="services-summary__card-title">Personel<br>Takibi</h3>
-            <p class="services-summary__card-desc">Sertifika takibi, vize işlemleri, transfer organizasyonu ve idari
+            <h3 class="services-summary__card-title" data-i18n-html="services.card4.title">Personel<br>Takibi</h3>
+            <p class="services-summary__card-desc" data-i18n="services.card4.desc">Sertifika takibi, vize işlemleri, transfer organizasyonu ve idari
               süreçler.</p>
           </div>
 
           <div class="services-summary__card">
             <span class="services-summary__number">05</span>
-            <h3 class="services-summary__card-title">Lojistik<br>Koordinasyon</h3>
-            <p class="services-summary__card-desc">Teslimat, parça transferi ve ikmal operasyonlarında uçtan uca
+            <h3 class="services-summary__card-title" data-i18n-html="services.card5.title">Lojistik<br>Koordinasyon</h3>
+            <p class="services-summary__card-desc" data-i18n="services.card5.desc">Teslimat, parça transferi ve ikmal operasyonlarında uçtan uca
               yönetim.</p>
           </div>
 
         </div>
         <div class="services-summary__footer">
-          <a href="pages/hizmetler.html" class="services-summary__link">Tüm Hizmetlerimiz →</a>
+          <a href="pages/hizmetler.html" class="services-summary__link" data-i18n="services.link">Tüm Hizmetlerimiz →</a>
         </div>
       </div>
     </section>
@@ -171,8 +178,8 @@
     <section class="why-us" id="why-us" aria-label="Neden Biz Özet">
       <div class="why-us__container">
         <div class="why-us__header">
-          <span class="why-us__label">Neden Biz</span>
-          <h2 class="why-us__title">Farkımızı Hissedeceksiniz</h2>
+          <span class="why-us__label" data-i18n="whyus.label">Neden Biz</span>
+          <h2 class="why-us__title" data-i18n="whyus.title">Farkımızı Hissedeceksiniz</h2>
         </div>
 
         <div class="why-us__timeline">
@@ -190,8 +197,8 @@
               </svg>
             </div>
             <div class="why-us__card">
-              <h3 class="why-us__card-title">Konum Bağımsız Hizmet</h3>
-              <p class="why-us__card-desc">Dünyanın neresinde olursanız olun, aynı kalite ve hızda destek alırsınız.</p>
+              <h3 class="why-us__card-title" data-i18n="whyus.item1.title">Konum Bağımsız Hizmet</h3>
+              <p class="why-us__card-desc" data-i18n="whyus.item1.desc">Dünyanın neresinde olursanız olun, aynı kalite ve hızda destek alırsınız.</p>
             </div>
           </div>
 
@@ -204,8 +211,8 @@
               </svg>
             </div>
             <div class="why-us__card">
-              <h3 class="why-us__card-title">Çözüm Odaklı Yaklaşım</h3>
-              <p class="why-us__card-desc">Ekibimiz beklenmedik durumlarda sakin, hızlı ve etkili biçimde aksiyon alır.
+              <h3 class="why-us__card-title" data-i18n="whyus.item2.title">Çözüm Odaklı Yaklaşım</h3>
+              <p class="why-us__card-desc" data-i18n="whyus.item2.desc">Ekibimiz beklenmedik durumlarda sakin, hızlı ve etkili biçimde aksiyon alır.
               </p>
             </div>
           </div>
@@ -220,8 +227,8 @@
               </svg>
             </div>
             <div class="why-us__card">
-              <h3 class="why-us__card-title">Titiz Takip Sistemi</h3>
-              <p class="why-us__card-desc">Hiçbir belge, hiçbir ekipman, hiçbir son tarih gözden kaçmaz.</p>
+              <h3 class="why-us__card-title" data-i18n="whyus.item3.title">Titiz Takip Sistemi</h3>
+              <p class="why-us__card-desc" data-i18n="whyus.item3.desc">Hiçbir belge, hiçbir ekipman, hiçbir son tarih gözden kaçmaz.</p>
             </div>
           </div>
 
@@ -234,8 +241,8 @@
               </svg>
             </div>
             <div class="why-us__card">
-              <h3 class="why-us__card-title">Şeffaf İletişim</h3>
-              <p class="why-us__card-desc">Her adımda sizi bilgilendiririz. Ne yaptığımızı ve ne zaman tamamlandığını
+              <h3 class="why-us__card-title" data-i18n="whyus.item4.title">Şeffaf İletişim</h3>
+              <p class="why-us__card-desc" data-i18n="whyus.item4.desc">Her adımda sizi bilgilendiririz. Ne yaptığımızı ve ne zaman tamamlandığını
                 her zaman bilirsiniz.</p>
             </div>
           </div>
@@ -250,8 +257,8 @@
               </svg>
             </div>
             <div class="why-us__card">
-              <h3 class="why-us__card-title">Seyrin Her Aşamasında</h3>
-              <p class="why-us__card-desc">Seyir öncesi hazırlıktan, seyir sonrası işlemlere kadar kesintisiz
+              <h3 class="why-us__card-title" data-i18n="whyus.item5.title">Seyrin Her Aşamasında</h3>
+              <p class="why-us__card-desc" data-i18n="whyus.item5.desc">Seyir öncesi hazırlıktan, seyir sonrası işlemlere kadar kesintisiz
                 yanınızdayız.</p>
             </div>
           </div>
@@ -259,7 +266,7 @@
         </div>
 
         <div class="why-us__footer">
-          <a href="pages/neden-biz.html" class="why-us__link">Detaylı Bilgi →</a>
+          <a href="pages/neden-biz.html" class="why-us__link" data-i18n="whyus.link">Detaylı Bilgi →</a>
         </div>
       </div>
     </section>
@@ -268,14 +275,14 @@
     <section class="intro" id="intro" aria-label="Tanıtım">
       <div class="intro__container">
         <div class="why-us__header">
-          <h2 class="why-us__title">Felsefemiz</h2>
+          <h2 class="why-us__title" data-i18n="philosophy.title">Felsefemiz</h2>
         </div>
-        <p class="intro__text">
-          Yat sahipleri ve kaptanları için en değerli şey zamandır. Biz, o değerli zamanın liman prosedürleriyle, idari
+        <p class="intro__text" data-i18n="philosophy.text">
+          Yat sahipleri ve kaptanları için en değerli şey zamandır. Biz, o değerli zamanın liman prosüdürleriyle, idari
           süreçlerle değil — açık denizde, güneşin altında geçirilmesi gerektiğine inanıyoruz.
         </p>
 
-        <a href="pages/iletisim.html" class="intro__cta" role="button">
+        <a href="pages/iletisim.html" class="intro__cta" role="button" data-i18n="philosophy.cta">
           Süreci Planlayalım
         </a>
       </div>
@@ -292,24 +299,24 @@
           <a href="index.html" class="footer__logo" aria-label="OceansBound Anasayfa">
             <img src="public/footer-logo.png" alt="OceansBound Logo" class="footer__logo-icon">
           </a>
-          <p class="footer__desc">
+          <p class="footer__desc" data-i18n-html="footer.desc">
             Denizcilik sektöründeki derin tecrübemizle,<br>
             operasyonlarınızı sorunsuz yönetiyoruz.
           </p>
         </div>
 
         <div class="footer__links">
-          <h4 class="footer__heading">Hızlı Erişim</h4>
+          <h4 class="footer__heading" data-i18n="footer.quicklinks">Hızlı Erişim</h4>
           <ul class="footer__list">
-            <li><a href="index.html">Anasayfa</a></li>
-            <li><a href="hakkimizda.html">Hakkımızda</a></li>
-            <li><a href="hizmetler.html">Hizmetler</a></li>
-            <li><a href="neden-biz.html">Neden Biz?</a></li>
+            <li><a href="index.html" data-i18n="nav.home">Anasayfa</a></li>
+            <li><a href="hakkimizda.html" data-i18n="nav.about">Hakkımızda</a></li>
+            <li><a href="hizmetler.html" data-i18n="nav.services">Hizmetler</a></li>
+            <li><a href="neden-biz.html" data-i18n="nav.whyus">Neden Biz?</a></li>
           </ul>
         </div>
 
         <div class="footer__contact">
-          <h4 class="footer__heading">İletişim</h4>
+          <h4 class="footer__heading" data-i18n="nav.contact">İletişim</h4>
           <ul class="footer__list">
             <li><a href="mailto:info@oceansbound.com">info@oceansbound.com</a></li>
             <li><a href="tel:+905551234567">+90 555 123 45 67</a></li>
@@ -339,7 +346,7 @@
 
       <!-- Bottom Section -->
       <div class="footer__bottom">
-        <p class="footer__copy">Copyright&copy;2026. Tüm Hakları Saklıdır.</p>
+        <p class="footer__copy" data-i18n="footer.copyright">Copyright&copy;2026. Tüm Hakları Saklıdır.</p>
         <div class="footer__developer">
           <img src="public/moni-icon.ico" alt="Moni Yazılım" class="footer__developer-icon">
           <span class="footer__copy">Moni Yazılım</span>
